@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"pattern","c":"Singleton","l":"getinstance()"},{"p":"pattern","c":"testing","l":"main(String[])","u":"main(java.lang.String[])"},{"p":"pattern","c":"testing","l":"testing()","u":"%3Cinit%3E()"},{"p":"<Unnamed>","c":"User","l":"User()","u":"%3Cinit%3E()"}];updateSearchResults();

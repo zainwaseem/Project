@@ -21,22 +21,37 @@
     <body> 
         <%@page import="java.sql.*,java.util.*" %>
         <%
-            String id= request.getParameter("id");
-            String pass= request.getParameter("pass");
-       try
-       {
-       Class.forName("com.mysql.jdbc.Driver");
-       
-       Connection conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/ietooplab","root","");
-       
-       Statement st=conn.createStatement();
-       int i=st.executeUpdate("insert into ietstdinfo values('"+id+"','"+pass+"')");
-       out.print("dtaa inserted succcesfully");
-        }
-        catch(Exception e){
-        out.print(e);
-//        e.printStackTrace();
-        }
+            
+//            
+//            String fn= request.getParameter("username");
+//            String pwd= request.getParameter("password");
+//            
+//            
+//            if(fn.equals("admin") || pwd.equals("admin")){
+//            response.sendRedirect("new.jsp");
+//            println.out("hello");
+//            }
+//            else{
+////            response.sendRedirect("index.html");  
+//            println.out("hellerrrrrrro");
+//            }
+            
+            
+//       try
+//       {
+//       Class.forName("com.mysql.jdbc.Driver");
+//       
+//       Connection conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/zain","root","");
+//       
+//       Statement st=conn.createStatement();
+////      int i=st.executeUpdate("insert into signup values('"+fn+"','"+pwd+"')");
+//       int i=st.executeUpdate("select * from signup where FullName = '"+fn+"' and password='"+pwd+"'");
+////       out.print("login succcesfully");
+//        }
+//        catch(Exception e){
+//        out.print(e);
+////        e.printStackTrace();
+//        }
         %>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
