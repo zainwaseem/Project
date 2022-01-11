@@ -12,7 +12,7 @@
         <title>JSP Page</title>
     </head>
     <body>
-  <%@page import="java.sql.*,java.util.*" %>
+        <%@page import="java.sql.*,java.util.*" %>
         <%
             String FullName= request.getParameter("FN");
             String EmailAddress= request.getParameter("EA");
@@ -26,7 +26,7 @@
        
            Statement st=conn.createStatement();
             int i=st.executeUpdate("insert into signup values('"+FullName+"','"+EmailAddress+"','"+Address+"','"+password+"')");
-        response.sendRedirect("new.jsp"); 
+        response.sendRedirect("index.html"); 
         }
         catch(Exception e){
         out.print(e);

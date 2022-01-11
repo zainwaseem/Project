@@ -1,52 +1,25 @@
 <html>
-
     <head>
-
         <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-
         <title>Login</title>
-
     </head>
-
     <body>
+       
         <%@page import="java.sql.*,java.util.*" %>
-
-        <%! 
-        String userdbName;
-
-        String userdbPsw;
-
-        String dbUsertype;
-
-        %>
-
         <%
-
+        String userdbName;
+        String userdbPsw;
+        String dbUsertype;
         Connection con= null;
-
         PreparedStatement ps = null;
-
         ResultSet rs = null;
-
-
-
         String driverName = "com.mysql.jdbc.Driver";
-
         String url = "jdbc:mysql://localhost:3306/zain";
-
         String user = "root";
-
         String dbpsw = "";
-
-
-
         String sql = "select * from signup where FullName=? and Password=?";
-
-
-
         String FullName = request.getParameter("FullName");
         String Password = request.getParameter("Password");
-
         if((!(FullName.equals(null) || FullName.equals("")) && !(Password.equals(null) || 
         Password.equals(""))))
         {
@@ -64,7 +37,7 @@
         if(FullName.equals(userdbName) && Password.equals(userdbPsw))
         {
         session.setAttribute("FullName",userdbName);
-        response.sendRedirect("index.html"); 
+        response.sendRedirect("new.jsp"); 
         } 
         }
         else
@@ -81,14 +54,15 @@
         {
         %>
     <center><p style="color:red">Error In Login</p></center>
-    <% 
+        <% 
 
-    getServletContext().getRequestDispatcher("/home.jsp").include(request, 
-    response);
+        getServletContext().getRequestDispatcher("/home.jsp").include(request, 
+        response);
 
-    }
+        }
 
-    %>
+        %>
+    
 
 </body>
 
