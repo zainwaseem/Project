@@ -1,7 +1,14 @@
+<%-- 
+    Document   : apply.jsp
+    Created on : Jan 11, 2022, 6:50:12 PM
+    Author     : Zain Waseem
+--%>s
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-        <title>Login</title>
+        <title>Validating</title>
+                <link rel="shortcut icon" type="image/jpg" href="Fav.jpg"/>
+
     </head>
     <body>
        
