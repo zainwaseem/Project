@@ -4,6 +4,8 @@
     Author     : Zain Waseem
 --%>
 
+
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -15,20 +17,20 @@
         <style>
             body{
                 background: url("bg.png");
-                 background-repeat: no-repeat;
+                background-repeat: no-repeat;
                 background-attachment: fixed;
                 background-size: cover;
                 color: white !important;
-                
+
             }
             .color-white{
-             color: #fff !important;   
+                color: #fff !important;
             }
         </style>
     </head>
     <body>
-        
-                <nav class="navbar navbar-expand-lg navbar-light bglight text-white">
+
+        <nav class="navbar navbar-expand-lg navbar-light bglight text-white">
             <div class="container-fluid">
                 <a class="navbar-brand" href="new.jsp"><img src="logo.png" alt="alt" style="width: 50px; height:50px;"/></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,31 +55,31 @@
             </div>
         </nav>
 
-        
+
         <div class="container">
             <div class="row">
                 <div class="col-md-4 mt-3">
-                    <form class="mt-5" action="submit.jsp">
+                    <form class="mt-3" action="submit.jsp">
                         <!--<label for="exampleInputEmail1" class="form-label">Full Name</label>-->
-                        <input  autofocus type="text "class="MY my-2 form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Full Name">
-                        <input  type="text" class=" my-2 fN form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Father Name">
-                        <input  type="number" class=" my-2 CN form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="CNIC">
-                        <input  type="number" class=" my-2 PH form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Phone">
-                        <input  type="Address" class=" my-2 AD form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Address">
-                        <input  type="email" class=" my-2 EM form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
-                        
+                        <input  autofocus type="text "class="MY my-2 form-control" name="MY" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Full Name">
+                        <input  type="text" class=" my-2 FN form-control"  name="FN" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Father Name">
+                        <input  type="number" class=" my-2 CN form-control"  name="CN"  id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="CNIC">
+                        <input  type="number" class=" my-2 PH form-control"  name="PH" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Phone">
+                        <input  type="Address" class=" my-2 AD form-control"  name="AD" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Address">
+                        <input  type="email" class=" my-2 EM form-control"  name="EM" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+
                         <div class="col-auto">
                             <label for="exampleInputEmail1" class=" form-label">Marks in Matric</label>
                             <br>
 
-                            <input type="number" placeholder="Marks" id="input" class="MM formcontrol" aria-describedby="HelpInline">
-                            <input type="number" placeholder="Total Marks" id="input" class="formcontrol" aria-describedby="HelpInline">
+                            <input type="number" name="MM" placeholder="Marks" id="input" class="MM formcontrol" aria-describedby="HelpInline">
+                            <input type="number" name="MatriMarks"  placeholder="Total Marks" id="input" class="formcontrol" aria-describedby="HelpInline">
                         </div>
                         <div class="col-auto mt-3">
                             <label for="exampleInputEmail1" class="form-label">Marks in Inter</label>
                             <br>
 
-                            <input type="number" placeholder="Marks" id="input" class="IM formcontrol" aria-describedby="HelpInline">
+                            <input type="number"name="IM" placeholder="Marks" id="input" class="IM formcontrol" aria-describedby="HelpInline">
                             <input type="number" placeholder="Total Marks" id="input" class="formcontrol" aria-describedby="HelpInline">
                         </div>
 
@@ -121,6 +123,7 @@
                 </div>
                 <div class="col-md-8">
                     
+     
                 </div>        
             </div>
         </div>
